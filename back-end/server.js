@@ -8,6 +8,7 @@
       cluster     = require('cluster'),
       numCPUs     = require('os').cpus().length,
       sample      = require('./routes/clientRoutes/sample'),
+      bunutan     = require('./routes/clientRoutes/bunutan'),
       catchAll    = require('./routes/clientRoutes/all');
 
     /**
@@ -30,6 +31,7 @@
      ** Routes
     ***/
     app.use( '/', sample );
+    app.use( '/', bunutan );
     app.use( '*', catchAll );
 
     /**

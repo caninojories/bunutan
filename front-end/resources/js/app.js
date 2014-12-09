@@ -22,6 +22,7 @@
          */
         //'app.avengers',
         'app.sample',
+        'app.bunutan',
 
         /*
          * Restangular Service
