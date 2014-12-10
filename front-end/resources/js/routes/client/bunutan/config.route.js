@@ -14,7 +14,7 @@
         state: 'bunutan',
         config: {
           url: '/bunutan',
-          templateUrl: '/bunutan/index.html',
+          templateUrl: '/client/bunutan/index.html',
           controller: 'Bunutan as vm',
           title: 'Bunutan'
         }

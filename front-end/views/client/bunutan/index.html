@@ -1,0 +1,20 @@
+
+  <div class='bunutan'>
+    <div class='welcomeNote text-center'>
+      <p>MONITO MONITA 2014</p>
+      <p>MALIGAYANG PASKO at MANIGONG BAGONG TAON</p>
+    </div>
+    <div class='text-center spin'>
+      <!-- <div class='form-group'>
+        <select class='form-control' ng-model="vm.selectedName" ng-options="o as o for o in vm.bunutanNames"></select>
+      </div> -->
+      <div class="alert alert-danger nabunot" role="alert" ng-show='vm.nabunotMo'>
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        Ang Iyong Nabunot ay si....
+      </div>
+      <div class="alert alert-danger" role="alert">
+        <span class="alert-link">{{vm.bunotName || '....'}}</span>
+      </div>
+      <button ng-audio=/images/good_drum_roll.mp3 vol=1.0 start=3.0  class='btn btn-default btn-lg' ng-click='vm.getYourMonitoMonita()' ng-disabled='vm.disabled' ng-show='!vm.disabled'>CLICK ME</button>
+    </div>
+  </div>

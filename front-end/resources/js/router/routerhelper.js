@@ -7,7 +7,7 @@
         .factory('routehelper', routehelper);
 
     routehelper.$inject = ['$location', '$rootScope', '$q', '$state', '$timeout', '$window',
-      'logger', 'routehelperConfig', 'commonsDataservice'];
+      'logger', 'routehelperConfig'];
 
     // Must configure via the routehelperConfigProvider
     function routehelperConfig() {
@@ -27,7 +27,7 @@
     }
 
     function routehelper( $location, $rootScope, $q, $state, $timeout, $window,
-      logger, routehelperConfig, commonsDataservice) {
+      logger, routehelperConfig) {
         var handlingRouteChangeError = false;
         var routeCounts = {
             errors: 0,

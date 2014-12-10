@@ -1,0 +1,32 @@
+.bunutan {
+  height: 100vh;
+  background-image: url("/images/christmas.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.bunutan .spin {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.bunutan .spin .nabunot {
+  font-size: 2em;
+}
+.bunutan button {
+  color: #f00;
+  font-weight: 900;
+}
+.bunutan button:hover {
+  color: #f00;
+}
+.bunutan .alert-link {
+  font-size: 4em;
+}
+.bunutan .welcomeNote {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 900;
+}

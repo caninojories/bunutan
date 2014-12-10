@@ -23,22 +23,23 @@
     {# END BOWER_COMPONENTS #}
 
     {# LINKS #}
+    <link rel="stylesheet" href="/compileCss/stylus/app.css"/>
     {# LINKS END #}
   </head>
   <body>
 
     <!-- <div ui-view=''></div> -->
     <!-- <div data-ng-controller="Shell as vm" ng-cloak> -->
-      <section id="content" class="content" >
+      <!-- <section id="content" class="content" > -->
         <div ui-view='' class='shuffle-animation'></div>
-        <div ngplus-overlay
+        <!-- <div ngplus-overlay
           ngplus-overlay-delay-in="100"
           ngplus-overlay-delay-out="700"
           ngplus-overlay-animation="dissolve-animation" ng-cloak>
           <img src="/img/busy.gif"/>
           <div class="page-spinner-message overlay-message" ng-cloak>{{vm.busyMessage}}</div>
         </div>
-      </section>
+      </section> -->
     <!-- </div> -->
 
     <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
@@ -54,15 +55,18 @@
     <script type="text/javascript" src="/bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
     <script type="text/javascript" src="/bower_components/angular-flash/dist/angular-flash.js"></script>
 
+    <script type="text/javascript" src="/bower_components/angular-audio/app/angular.audio.js"></script>
+
     <script type="text/javascript" src="/js/app.js"></script>
 
-    <script type="text/javascript" src="/js/routes/sample/sample.module.js"></script>
-    <script type="text/javascript" src="/js/routes/sample/sample.js"></script>
-    <script type="text/javascript" src="/js/routes/sample/config.route.js"></script>
+    <script type="text/javascript" src="/js/routes/client/sample/sample.module.js"></script>
+    <script type="text/javascript" src="/js/routes/client/sample/sample.js"></script>
+    <script type="text/javascript" src="/js/routes/client/sample/config.route.js"></script>
 
-    <script type="text/javascript" src="/js/routes/bunutan/bunutan.module.js"></script>
-    <script type="text/javascript" src="/js/routes/bunutan/bunutan.js"></script>
-    <script type="text/javascript" src="/js/routes/bunutan/config.route.js"></script>
+    <script type="text/javascript" src="/js/routes/client/bunutan/bunutan.module.js"></script>
+    <script type="text/javascript" src="/js/routes/client/bunutan/bunutan.js"></script>
+    <script type="text/javascript" src="/js/routes/client/bunutan/config.route.js"></script>
+    <script type="text/javascript" src="/js/routes/client/bunutan/dataservice.js"></script>
 
     <script type="text/javascript" src="/js/exception/exception.module.js"></script>
     <script type="text/javascript" src="/js/exception/exception.js"></script>

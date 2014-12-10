@@ -7,9 +7,12 @@
       passport 		= require('passport'),
       cluster     = require('cluster'),
       numCPUs     = require('os').cpus().length,
-      sample      = require('./routes/clientRoutes/sample'),
-      bunutan     = require('./routes/clientRoutes/bunutan'),
-      catchAll    = require('./routes/clientRoutes/all');
+      sample      = require('./routes/client/sample'),
+      bunutan     = require('./routes/client/bunutan'),
+
+      bunutanApi  = require('./routes/restApi/API/bunutan'),
+      
+      catchAll    = require('./routes');
 
     /**
      ** Configuration File NoSQL Database
@@ -30,6 +33,7 @@
     /**
      ** Routes
     ***/
+    app.use( '/bunutanApi', bunutanApi );
     app.use( '/', sample );
     app.use( '/', bunutan );
     app.use( '*', catchAll );
